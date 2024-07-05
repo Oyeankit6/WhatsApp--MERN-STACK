@@ -38,7 +38,7 @@ const AccountProvider = ({ children }) => {
         setShowloginButton,
         showlogoutButton,
         setShowlogoutButton,
-        socket,
+        
         activeUsers,
         setActiveUsers
         
