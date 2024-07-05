@@ -1,7 +1,7 @@
 import { createContext, useState , useRef } from "react";
 
 import { useEffect } from "react";
-import { io } from "socket.io-client"
+
 
 export const AccountContext = createContext(null);
 
@@ -17,11 +17,9 @@ const AccountProvider = ({ children }) => {
   const [newMessageFlag, setNewMessageFlag] = useState(false);
   const [cid, setCid] = useState();
 
-  const socket = useRef();
 
-  useEffect(()=>{
-      socket.current = io("ws://localhost:000")
-  },[])
+
+  
 
  
 
